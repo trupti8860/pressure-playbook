@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pressure Playbook — IPL pressure-performance scouting dashboard for SupeRR Selector Season 2.">
+  <title>Pressure Playbook | SupeRR Selector</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#">
+        <span class="brand-mark">P<span>.</span></span>
+        <span class="brand-name">PRESSURE<span>PLAYBOOK</span></span>
+      </a>
+
+      <div class="side-label">WORKSPACE</div>
+      <nav class="side-nav">
+        <button class="nav-link active" data-view="overview">
+          <span class="nav-icon">◫</span> Overview
+        </button>
+        <button class="nav-link" data-view="batters">
+          <span class="nav-icon">▥</span> Batting shortlist
+        </button>
+        <button class="nav-link" data-view="bowlers">
+          <span class="nav-icon">◉</span> Bowling shortlist
+        </button>
+        <button class="nav-link" data-view="methodology">
+          <span class="nav-icon">⌘</span> Methodology
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="live-indicator"><span></span> ANALYSIS COMPLETE</div>
+        <div class="side-foot">SUPERR SELECTOR<br>SEASON 02 · 2026</div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">RAJASTHAN ROYALS · PLAYER SCOUTING</div>
+          <div class="topbar-title">SUPE<span>RR</span> SELECTOR <span class="season-tag">S02</span></div>
+        </div>
+        <div class="topbar-right">
+          <span class="data-tag"><span class="dot"></span> IPL DATA · 2022–2026</span>
+          <div class="avatar">RR</div>
+        </div>
+      </header>
+
+      <section class="page-section active" id="overview-view">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="hero-kicker"><span class="kicker-line"></span> THE SCOUTING REPORT</div>
+            <h1>THE PRESSURE<br><span>PLAYBOOK.</span></h1>
+            <p class="hero-description">
+              Talent is everywhere. Performance under pressure is the differentiator.
+              A data-led shortlist built around how players respond when the game gets tight.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-btn" data-go="batters">EXPLORE SHORTLIST <span>↗</span></button>
+              <button class="text-btn" data-go="methodology">HOW WE SCORED IT <span>→</span></button>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit orbit-three"></div>
+            <div class="hero-ball">P<span>.</span></div>
+            <div class="orbit-caption caption-top">PRESSURE INDEX</div>
+            <div class="orbit-caption caption-bottom">READ THE MOMENT.</div>
+            <div class="hero-number">20</div>
+            <div class="hero-number-label">SELECTED PLAYERS</div>
+          </div>
+          <div class="hero-index">01 / 04</div>
+        </div>
+
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">THE DATA AT A GLANCE</div>
+            <h2>INSIDE THE NUMBERS<span>.</span></h2>
+          </div>
+          <span class="section-note">IPL-ONLY ANALYSIS · 2022–2026</span>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <div class="stat-top"><span>MATCH RECORDS</span><span class="stat-icon">◷</span></div>
+            <div class="stat-value">371</div>
+            <div class="stat-foot">IPL match records identified</div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span>DELIVERIES</span><span class="stat-icon">↗</span></div>
+            <div class="stat-value">87,673</div>
+            <div class="stat-foot">Ball-by-ball deliveries analysed</div>
+          </article>
+          <article class="stat-card accent-card">
+            <div class="stat-top"><span>PRESSURE BALLS</span><span class="stat-icon">◉</span></div>
+            <div class="stat-value">31,248</div>
+            <div class="stat-foot">Deliveries classified as pressure</div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span>FINAL SHORTLIST</span><span class="stat-icon">✳</span></div>
+            <div class="stat-value">20</div>
+            <div class="stat-foot">10 batting · 10 bowling options</div>
+          </article>
+        </div>
+
+        <div class="split-heading">
+          <div>
+            <div class="eyebrow">TWO SIDES OF THE GAME</div>
+            <h2>THE SHORTLIST<span>.</span></h2>
+          </div>
+          <span class="section-note">SELECTED CANDIDATES</span>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card batting-card">
+            <div class="category-top"><span class="category-symbol">01</span><span class="category-type">BATTING UNIT</span></div>
+            <div class="category-count">10<span>PLAYERS</span></div>
+            <h3>BATTERS &<br>ALL-ROUNDERS</h3>
+            <p>Players evaluated through pressure strike rate, dismissal rate and strike-rate uplift.</p>
+            <button class="category-link" data-go="batters">VIEW BATTING SHORTLIST <span>↗</span></button>
+          </article>
+          <article class="category-card bowling-card">
+            <div class="category-top"><span class="category-symbol">02</span><span class="category-type">BOWLING UNIT</span></div>
+            <div class="category-count">10<span>PLAYERS</span></div>
+            <h3>BOWLERS &<br>ALL-ROUNDERS</h3>
+            <p>Players evaluated through pressure economy, wicket rate and economy improvement.</p>
+            <button class="category-link" data-go="bowlers">VIEW BOWLING SHORTLIST <span>↗</span></button>
+          </article>
+        </div>
+
+        <div class="insight-panel">
+          <div class="insight-symbol">✳</div>
+          <div>
+            <div class="eyebrow">THE CENTRAL IDEA</div>
+            <h3>THE MOMENT MATTERS MORE THAN THE MOMENTUM.</h3>
+            <p>This shortlist prioritises pressure-phase evidence rather than relying only on overall season totals. Eligibility thresholds and sample sizes are shown transparently.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" id="batters-view">
+        <div class="page-title-row">
+          <div>
+            <div class="eyebrow">PLAYER SCOUTING / 01</div>
+            <h1>THE BATTERS<span>.</span></h1>
+            <p class="page-subtitle">Batters and batting all-rounders selected for pressure-phase impact.</p>
+          </div>
+          <div class="count-pill"><strong>10</strong> SELECTED</div>
+        </div>
+        <div class="metric-strip">
+          <div><span>ELIGIBLE BATTERS</span><strong>87</strong></div>
+          <div><span>TOP ELIGIBLE RANK</span><strong>#05</strong></div>
+          <div><span>PROVISIONAL PICKS</span><strong>04</strong></div>
+        </div>
+        <div class="filter-bar">
+          <div class="search-wrap"><span>⌕</span><input id="batter-search" type="search" placeholder="Search player name..."></div>
+          <select id="batter-filter" aria-label="Filter batter eligibility">
+            <option value="all">All players</option>
+            <option value="eligible">Ranked / eligible</option>
+            <option value="provisional">Provisional</option>
+          </select>
+          <span class="result-count" id="batter-count">10 PLAYERS</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>PLAYER</th><th>PRESSURE SR</th><th>PRESSURE BALLS</th><th>RUNS</th><th>SR UPLIFT</th><th>ELIGIBLE RANK</th><th>STATUS</th></tr>
+            </thead>
+            <tbody id="batter-table"></tbody>
+          </table>
+        </div>
+        <div class="table-footnote">Rank is among eligible IPL batters only. Provisional players do not receive an eligibility rank.</div>
+        <div class="detail-grid" id="batter-insights"></div>
+      </section>
+
+      <section class="page-section" id="bowlers-view">
+        <div class="page-title-row">
+          <div>
+            <div class="eyebrow">PLAYER SCOUTING / 02</div>
+            <h1>THE BOWLERS<span>.</span></h1>
+            <p class="page-subtitle">Bowlers and bowling all-rounders selected for pressure-phase impact.</p>
+          </div>
+          <div class="count-pill"><strong>10</strong> SELECTED</div>
+        </div>
+        <div class="metric-strip">
+          <div><span>ELIGIBLE BOWLERS</span><strong>81</strong></div>
+          <div><span>TOP ELIGIBLE RANK</span><strong>#17</strong></div>
+          <div><span>PROVISIONAL PICKS</span><strong>03</strong></div>
+        </div>
+        <div class="filter-bar">
+          <div class="search-wrap"><span>⌕</span><input id="bowler-search" type="search" placeholder="Search player name..."></div>
+          <select id="bowler-filter" aria-label="Filter bowler eligibility">
+            <option value="all">All players</option>
+            <option value="eligible">Ranked / eligible</option>
+            <option value="provisional">Provisional</option>
+          </select>
+          <span class="result-count" id="bowler-count">10 PLAYERS</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>PLAYER</th><th>PRESSURE ECON.</th><th>PRESSURE WICKETS</th><th>LEGAL BALLS</th><th>WICKETS / 100</th><th>ELIGIBLE RANK</th><th>STATUS</th></tr>
+            </thead>
+            <tbody id="bowler-table"></tbody>
+          </table>
+        </div>
+        <div class="table-footnote">Pressure wickets are credited using the defined bowler-wicket dismissal types. Run-outs are excluded.</div>
+        <div class="detail-grid" id="bowler-insights"></div>
+      </section>
+
+      <section class="page-section" id="methodology-view">
+        <div class="page-title-row">
+          <div>
+            <div class="eyebrow">TRANSPARENCY / SCORING FRAMEWORK</div>
+            <h1>THE METHOD<span>.</span></h1>
+            <p class="page-subtitle">How the pressure-performance shortlist was constructed.</p>
+          </div>
+          <div class="count-pill"><strong>03</strong> SCORE FACTORS</div>
+        </div>
+
+        <div class="method-intro">
+          <div class="method-big">01<span>—</span></div>
+          <div><h3>DEFINE THE PRESSURE.</h3><p>Deliveries were classified using innings context, required run rate, wickets remaining and overs remaining. Revised innings lengths and targets were used where supplied.</p></div>
+        </div>
+        <div class="pressure-grid">
+          <article class="pressure-card"><span>01 / SECOND INNINGS</span><h3>CHASE INTENSITY</h3><p>Required run rate of at least 10, or four or fewer wickets remaining with 60 or fewer balls left, or the final 12 balls with runs still needed.</p></article>
+          <article class="pressure-card"><span>02 / FIRST INNINGS</span><h3>LATE-INNINGS PRESSURE</h3><p>Final 30 balls with at least five wickets down, or the final 12 balls of the innings.</p></article>
+        </div>
+
+        <div class="method-intro">
+          <div class="method-big">02<span>—</span></div>
+          <div><h3>MEASURE PERFORMANCE.</h3><p>Each player receives a composite score from three percentile-ranked metrics within their discipline. Higher composite score indicates stronger relative performance across the chosen factors.</p></div>
+        </div>
+        <div class="score-grid">
+          <article class="score-card"><div class="score-number">A</div><span>BATTER FACTOR 01</span><h3>PRESSURE STRIKE RATE</h3><p>Higher pressure strike rate receives a higher percentile score.</p></article>
+          <article class="score-card"><div class="score-number">B</div><span>BATTER FACTOR 02</span><h3>DISMISSAL RATE</h3><p>Lower pressure dismissal rate receives a higher percentile score.</p></article>
+          <article class="score-card"><div class="score-number">C</div><span>BATTER FACTOR 03</span><h3>STRIKE-RATE UPLIFT</h3><p>Higher pressure strike rate relative to normal-phase strike rate receives a higher score.</p></article>
+          <article class="score-card"><div class="score-number">D</div><span>BOWLER FACTOR 01</span><h3>PRESSURE ECONOMY</h3><p>Lower pressure economy receives a higher percentile score.</p></article>
+          <article class="score-card"><div class="score-number">E</div><span>BOWLER FACTOR 02</span><h3>WICKET RATE</h3><p>More wickets per 100 pressure legal balls receives a higher score.</p></article>
+          <article class="score-card"><div class="score-number">F</div><span>BOWLER FACTOR 03</span><h3>ECONOMY IMPROVEMENT</h3><p>Greater improvement from normal economy to pressure economy receives a higher score.</p></article>
+        </div>
+
+        <div class="method-intro">
+          <div class="method-big">03<span>—</span></div>
+          <div><h3>APPLY ELIGIBILITY.</h3><p>Minimum sample sizes help reduce the influence of very small samples. Players below either threshold remain visible as provisional candidates, without a fabricated rank.</p></div>
+        </div>
+        <div class="threshold-grid">
+          <div class="threshold-card"><span>BATTER THRESHOLD</span><strong>60 + 120</strong><p>At least 60 pressure balls and 120 normal balls faced.</p></div>
+          <div class="threshold-card"><span>BOWLER THRESHOLD</span><strong>90 + 180</strong><p>At least 90 pressure legal balls and 180 normal legal balls.</p></div>
+        </div>
+
+        <div class="caveat-box">
+          <div class="caveat-icon">!</div>
+          <div><h3>READ THE DATA RESPONSIBLY.</h3><p>This is a historical IPL pressure-performance shortlist, not a guarantee of future performance or auction availability. A provisional label means the player does not meet the stated minimum sample size. Player selection also involves role fit, team balance, budget and auction conditions, which are not modelled by this pressure score.</p></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>PRESSURE<span>PLAYBOOK</span> <span class="footer-dot">●</span> SUPERR SELECTOR S02</div>
+        <div>BUILT ON IPL DATA · 2022–2026</div>
+      </footer>
+    </main>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
